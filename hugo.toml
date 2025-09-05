@@ -1,0 +1,87 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'MYOFG'
+theme = 'hugo-book'
+# Other options: https://themes.gohugo.io/themes/hugo-coder/ / https://themes.gohugo.io/themes/lotusdocs/ / https://themes.gohugo.io/themes/hugo-theme-monochrome/
+
+pluralizelisttitles = false
+
+# Book configuration
+disablePathToLower = true
+
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1
+
+[languages]
+  [languages.en]
+    contentDir = 'content/english'
+    languageName = 'English'
+    weight = 10
+  [languages.fr]
+    contentDir = 'content/french'
+    languageName = 'Français'
+    weight = 20
+
+[menu]
+[[menu.home]]
+  name = "Sportswear"
+  url = "/sportswear/"
+  weight = 1
+
+[[menu.home]]
+  name = "Latex"
+  url = "/latex/"
+  weight = 2
+
+[[menu.home]]
+  name = "Rubber"
+  url = "/rubber/"
+  weight = 3
+
+[params]
+  BookTheme = 'auto'
+
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  # You can also specify this parameter per page in front matter.
+  BookToC = true
+
+  # (Optional, default favicon.png) Set the path to a favicon file.
+  # If the favicon is /static/favicon.png then the path would be favicon.png
+  # BookFavicon = 'favicon.png'
+
+  # (Optional, default none) Set the path to a logo for the book.
+  # If the logo is /static/logo.png then the path would be logo.png
+  # BookLogo = 'logo.png'
+
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  BookSection = '/'
+
+  # (Optional, default 'January 2, 2006') Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  # https://gohugo.io/functions/time/format/
+  BookDateFormat = 'January 2, 2006'
+
+  # (Optional, default true) Enables comments template on pages
+  # By default partals/docs/comments.html includes Disqus template
+  # See https://gohugo.io/content-management/comments/#configure-disqus
+  # Can be overwritten by same param in page frontmatter
+  BookComments = false
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
+  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
+  # Theme will print warning if page referenced in markdown does not exists.
+  BookPortableLinks = true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+  BookServiceWorker = true
