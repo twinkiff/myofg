@@ -5,4 +5,11 @@ bookHeadingAnchor: false
 
 # Shops 
 
-lorem ipsum
+## EU based shops
+
+**TODO**
+
+
+## Latex fabric
+
+**TODO**

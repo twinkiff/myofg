@@ -1,9 +1,8 @@
 ---
-title: Sportswear
+title: Eyelets
 bookHeadingAnchor: false
-weight: 40
 ---
 
-# Sportswear 
+# Eyelets 
 
 lorem ipsum

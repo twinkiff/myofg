@@ -6,6 +6,8 @@ theme = 'hugo-book'
 
 pluralizelisttitles = false
 
+copyrightHTML = 'Test'  # TODO
+
 # Book configuration
 disablePathToLower = true
 
@@ -22,26 +24,11 @@ disablePathToLower = true
     contentDir = 'content/english'
     languageName = 'English'
     weight = 10
-  [languages.fr]
-    contentDir = 'content/french'
-    languageName = 'Français'
-    weight = 20
+  #[languages.fr]
+  #  contentDir = 'content/french'
+  #  languageName = 'Français'
+  #  weight = 20
 
-[menu]
-[[menu.home]]
-  name = "Sportswear"
-  url = "/sportswear/"
-  weight = 1
-
-[[menu.home]]
-  name = "Latex"
-  url = "/latex/"
-  weight = 2
-
-[[menu.home]]
-  name = "Rubber"
-  url = "/rubber/"
-  weight = 3
 
 [params]
   BookTheme = 'auto'

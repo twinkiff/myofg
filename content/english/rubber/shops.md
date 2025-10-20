@@ -1,9 +1,8 @@
 ---
-title: Sportswear
+title: Shops
 bookHeadingAnchor: false
-weight: 40
 ---
 
-# Sportswear 
+# Shops 
 
 lorem ipsum
